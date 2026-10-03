@@ -1,0 +1,56 @@
+[32880:20204:0917/144429.288:ERROR:net\socket\tcp_socket_win.cc:530] bind() returned an error: Only one usage of each socket address (protocol/network address/port) is normally permitted. (0x2740)
+[32880:20204:0917/144429.289:ERROR:net\socket\tcp_socket_win.cc:530] bind() returned an error: Only one usage of each socket address (protocol/network address/port) is normally permitted. (0x2740)
+[32880:20204:0917/144429.289:ERROR:content\browser\devtools\devtools_http_handler.cc:311] Cannot start http server for devtools.
+[32880:2544:0917/144432.370:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR
+[32880:2544:0917/144432.415:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR
+[32880:2544:0917/144432.426:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR
+[32880:2544:0917/144432.512:ERROR:google_apis\gcm\engine\mcs_client.cc:702]   Error code: 401  Error message: Authentication Failed: wrong_secret
+[32880:2544:0917/144432.512:ERROR:google_apis\gcm\engine\mcs_client.cc:704] Failed to log in to GCM, resetting connection.
+Created TensorFlow Lite XNNPACK delegate for CPU.
+[32880:2544:0917/144453.968:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+[32880:2544:0917/144549.773:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+[32880:2544:0917/144731.948:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+[32880:2544:0917/145041.889:ERROR:google_apis\gcm\engine\registra[30420:30072:0917/151711.754:ERROR:components\device_event_log\device_event_log_impl.cc:211] [15:17:11.755] USB: usb_service_win.cc:108 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: Element n[32880:14348:0917/1[30420:28500:0917/185359.187:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:484] ConnectionHandler failed with net error: -2
+[30420:28500:0917/185411.667:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:484] ConnectionHandler failed with net error: -2
+[30420:28500:0917/185517.539:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:435] Failed to connect to MCS endpoint with error -105
+[30420:28500:0917/185519.715:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:435] Failed to connect to MCS endpoint with error -105
+[30420:28500:0917/191147.266:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:435] Failed to connect to MCS endpoint with error -105
+[30420:28500:0918/092412.900:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:435] Failed to connect to MCS endpoint with error -106
+[30420:28500:0918/093754.222:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:484] ConnectionHandler failed with net error: -2
+[30420:28500:0918/093758.383:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:435] Failed to connect to MCS endpoint with error -105
+[30420:30072:0918/101111.409:ERROR:components\device_event_log\device_event_log_impl.cc:211] [10:11:11.409] USB: usb_service_win.cc:108 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: E[32880:14348:0918/101111.41[30420:28500:0918/132305.760:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:484] ConnectionHandler failed with net error: -2
+[30420:28500:0918/141501.356:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:435] Failed to connect to MCS endpoint with error -7
+[30420:28500:0918/161451.634:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:484] ConnectionHandler failed with net error: -2
+[30420:28500:0918/162812.448:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:484] ConnectionHandler failed with net error: -2
+[30420:28500:0918/162856.723:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:484] ConnectionHandler failed with net error: -2
+[30420:28500:0918/183509.333:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:484] ConnectionHandler failed with net error: -2
+[30420:28500:0918/183525.281:ERROR:google_apis\gcm\engine\connection_factor[32880:2544:0918/183525.304:ERROR:google_apis\gcm\engine\connectio[30420:28500:0918/185143.756:ERROR:google_apis\gcm\engine\connection_facto[32880:2544:0918/185143.774:ERROR:google_apis\gcm\engine\connection[30420:28500:0920/125856.286:ERROR:google_apis\gcm\engine\connection_fact[32880:2544:0920/125856.486:ERROR:google_apis\gcm\engine\connection_[30420:30072:0920/132719.561:ERROR:components\device_event_log\device_ev[32880:14348:0920/132719.565:ERROR:components\device_event_log\device_event_log_impl.cc:211] [13:27:19.565] USB: usb_service_win.cc:108 SetupDiGetDeviceProperty({{A45C254[30420:28500:0920/133410.554:ERROR:google_apis\gcm\engine\connection_fac[32880:2544:0920/133920.871:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:435] Failed to connect to MCS endpoint with error -7
+[32880:2544:0920/135645.969:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:435] Failed to connect to MCS endpoint with error -105
+[32880:2544:0920/135751.406:ERROR:google_apis\gcm\engine\connecti[30420:28500:0920/135905.210:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:435] Failed to connect to MCS endpoint with error -105
+[30420:28500:0920/140017.752:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:484] ConnectionHandler failed with net error: -2
+[30420:28500:0920/140017.884:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:435] Failed to connect to MCS endpoint with error -105
+[30420:28500:0920/140120.243:ERROR:google_apis\gcm\engine\connecti[32880:2544:0920/140120.243:ERROR:google_apis\gcm\engine\connection_f[30420:28500:0920/140122.348:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:435] Failed to connect to MCS endpoint with error -105
+[30420:28500:0920/140159.210:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:435] Failed to connect to MCS endpoint with error -100
+[30420:28500:0920/140312.719:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:435] Failed to connect to MCS endpoint with error -105
+[30420:28500:0920/140720.863:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:435] Failed to connect to MCS endpoint with error -105
+[30420:28500:0920/141114.664:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:435] Failed to connect to MCS endpoint with error -105
+[30420:28500:0920/141244.195:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:435] Failed to connect to MCS endpoint with error -105
+[30420:28500:0920/141329.796:ERROR:google_apis\gcm\en[32880:2544:0920/141329.902:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:435][30420:28500:0920/141333.813:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:435] Failed to connect to MCS endpoint with error -105
+[30420:28500:0920/141832.373:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:435] Failed to connect to MCS endpoint with error -105
+[30420:28500:0920/141901.290:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:484] ConnectionHandler failed with net error: -2
+[30420:28500:0920/142110.301:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:435] Failed to connect to MCS endpoint with error -105
+[30420:28500:0920/142131.515:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:435] Failed to connect to MCS endpoint with error -105
+[30420:28500:0920/142317.833:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:435] Failed to connect to MCS endpoint with error -105
+[30420:28500:0920/143011.667:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:484] ConnectionHandler failed with net error: -2
+Failed to connect to MCS endpoint with error -105
+[32880:2544:0920/143011.690:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:484] ConnectionHandler failed with net error: -2
+or -105
+[23976:24944:0920/141115.014:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:435] Failed to connect to MCS endpoint with error -105
+[23976:24944:0920/141329.884:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:435] Failed to connect to MCS endpoint with error -105
+[23976:24944:0920/141333.813:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:435] Failed to connect to MCS endpoint with error -105
+[23976:24944:0920/141832.326:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:435] Failed to connect to MCS endpoint with error -105
+[23976:24944:0920/141901.292:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:484] ConnectionHandler failed with net error: -2
+[23976:24944:0920/142110.355:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:435] Failed to connect to MCS endpoint with error -105
+[23976:24944:0920/142131.529:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:435] Failed to connect to MCS endpoint with error -105
+[23976:24944:0920/142317.833:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:435] Failed to connect to MCS endpoint with error -105
+[23976:24944:0920/143011.702:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:484] ConnectionHandler failed with net error: -2
