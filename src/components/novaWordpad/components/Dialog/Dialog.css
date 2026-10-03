@@ -1,0 +1,93 @@
+.nova-wordpad-dialog {
+  background: var(--bg-paper);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-dialog);
+  max-width: calc(100vw - 32px);
+  max-height: calc(100vh - 32px);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.nova-wordpad-dialog__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-3) var(--space-4);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.nova-wordpad-dialog__title {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.nova-wordpad-dialog__close {
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+}
+.nova-wordpad-dialog__close:hover {
+  background: var(--bg-toolbar-pressed);
+  color: var(--text-primary);
+}
+
+.nova-wordpad-dialog__body {
+  padding: var(--space-4);
+  overflow-y: auto;
+}
+
+.nova-wordpad-dialog__footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-4);
+  border-top: 1px solid var(--border-subtle);
+}
+
+.nova-wordpad-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: var(--space-3);
+}
+
+.nova-wordpad-field label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.nova-wordpad-field input[type='text'],
+.nova-wordpad-field input[type='url'],
+.nova-wordpad-field input[type='number'] {
+  height: 32px;
+  padding: 0 var(--space-2);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  background: var(--bg-paper);
+}
+
+.nova-wordpad-field input:focus-visible {
+  border-color: var(--accent);
+}
+
+.nova-wordpad-field-row {
+  display: flex;
+  gap: var(--space-3);
+}
+
+.nova-wordpad-field-check {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: 13px;
+}

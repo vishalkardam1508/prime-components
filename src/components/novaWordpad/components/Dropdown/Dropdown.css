@@ -1,0 +1,65 @@
+.nova-wordpad-dropdown {
+  position: relative;
+}
+
+.nova-wordpad-dropdown__trigger {
+  width: 100%;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+  padding: 0 6px 0 8px;
+  background: var(--bg-paper);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+}
+
+.nova-wordpad-dropdown__trigger:hover {
+  border-color: var(--border-strong);
+}
+
+.nova-wordpad-dropdown__value {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.nova-wordpad-dropdown__caret {
+  color: var(--text-secondary);
+  font-size: 9px;
+}
+
+.nova-wordpad-dropdown__panel {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  z-index: 40;
+  min-width: 100%;
+  max-height: 280px;
+  overflow-y: auto;
+  background: var(--bg-paper);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-dialog);
+  list-style: none;
+  padding: var(--space-1) 0;
+}
+
+.nova-wordpad-dropdown__option {
+  padding: 6px var(--space-3);
+  font-size: 13px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.nova-wordpad-dropdown__option:hover {
+  background: var(--bg-toolbar-pressed);
+}
+
+.nova-wordpad-dropdown__option--selected {
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-weight: 600;
+}

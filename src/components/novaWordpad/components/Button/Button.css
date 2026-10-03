@@ -1,0 +1,45 @@
+.nova-wordpad-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  height: 32px;
+  padding: 0 var(--space-4);
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  transition: background-color 0.12s ease, border-color 0.12s ease;
+}
+
+.nova-wordpad-btn:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.nova-wordpad-btn--primary {
+  background: var(--accent);
+  color: var(--accent-contrast);
+}
+.nova-wordpad-btn--primary:hover:not(:disabled) {
+  background: var(--accent-hover);
+}
+
+.nova-wordpad-btn--secondary {
+  background: var(--bg-paper);
+  border-color: var(--border-strong);
+  color: var(--text-primary);
+}
+.nova-wordpad-btn--secondary:hover:not(:disabled) {
+  background: var(--bg-toolbar-pressed);
+}
+
+.nova-wordpad-btn--danger {
+  background: var(--danger-soft);
+  color: var(--danger);
+  border-color: var(--danger);
+}
+.nova-wordpad-btn--danger:hover:not(:disabled) {
+  background: var(--danger);
+  color: var(--text-inverse);
+}

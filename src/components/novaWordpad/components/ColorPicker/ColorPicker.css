@@ -1,0 +1,64 @@
+.nova-wordpad-color-picker {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  z-index: 40;
+  background: var(--bg-paper);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-dialog);
+  padding: var(--space-3);
+  width: 200px;
+}
+
+.nova-wordpad-color-picker__grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 6px;
+  margin-bottom: var(--space-3);
+}
+
+.nova-wordpad-color-picker__swatch {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  border: 1px solid var(--border-subtle);
+}
+.nova-wordpad-color-picker__swatch:hover {
+  transform: scale(1.1);
+}
+
+.nova-wordpad-color-picker__custom {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.nova-wordpad-color-picker__custom input[type='color'] {
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: 1px solid var(--border-subtle);
+  border-radius: 4px;
+}
+
+.nova-wordpad-color-picker__custom input[type='text'] {
+  flex: 1;
+  min-width: 0;
+  height: 28px;
+  padding: 0 6px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  border: 1px solid var(--border-subtle);
+  border-radius: 4px;
+}
+
+.nova-wordpad-color-picker__apply {
+  height: 28px;
+  padding: 0 8px;
+  font-size: 12px;
+  font-weight: 600;
+  background: var(--accent);
+  color: var(--accent-contrast);
+  border-radius: 4px;
+}

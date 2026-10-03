@@ -1,0 +1,37 @@
+.nova-wordpad-toolbar {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 2px;
+  height: 35px;
+  padding: 0 6px;
+  background: var(--bg-toolbar);
+  border-bottom: 1px solid var(--border-subtle);
+  /*
+   * Intentionally NOT overflow-x:auto here: setting overflow-x to anything
+   * other than visible forces the browser to compute overflow-y as 'auto'
+   * too (per the CSS Overflow spec's "overflow-x/y must not be visible+
+   * non-visible" rule), which clips every position:absolute popover that
+   * descends from this row (File menu, Heading/Font dropdowns, table-insert
+   * grid, color pickers) the moment it extends below the toolbar's own
+   * 35px height — exactly what happened here. All toolbar children are
+   * fixed at 24px, comfortably within 35px, so nothing needs to scroll at
+   * any realistic width; height:35px + flex-wrap:nowrap already keeps the
+   * row itself from growing taller without any overflow restriction.
+   */
+}
+
+.nova-wordpad-toolbar__group {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  flex-shrink: 0;
+}
+
+.nova-wordpad-toolbar__divider {
+  width: 1px;
+  height: 18px;
+  margin: 0 4px;
+  background: var(--border-subtle);
+  flex-shrink: 0;
+}

@@ -1,0 +1,19 @@
+.nova-wordpad-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: var(--bg-overlay);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  animation: nova-wordpad-modal-fade-in 0.12s ease-out;
+}
+
+@keyframes nova-wordpad-modal-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

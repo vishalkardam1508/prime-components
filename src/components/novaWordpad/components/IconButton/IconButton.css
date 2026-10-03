@@ -1,0 +1,32 @@
+.nova-wordpad-icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  border: 1px solid transparent;
+}
+
+.nova-wordpad-icon-btn:hover:not(:disabled) {
+  background: var(--bg-toolbar-pressed);
+  border-color: var(--border-subtle);
+}
+
+.nova-wordpad-icon-btn--active {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.nova-wordpad-icon-btn:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.nova-wordpad-icon-btn svg {
+  width: 14px;
+  height: 14px;
+}
