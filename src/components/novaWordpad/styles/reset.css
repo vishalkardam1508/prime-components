@@ -1,0 +1,67 @@
+/**
+ * Baseline reset for NovaWordpad, scoped under `.nova-wordpad-root` so it
+ * never touches the host app's own `html`/`body`/`#root` or global tag
+ * selectors. Apply the `nova-wordpad-root` class to this component's
+ * outermost wrapper to pick up both this reset and styles/theme.css.
+ */
+.nova-wordpad-root,
+.nova-wordpad-root *,
+.nova-wordpad-root *::before,
+.nova-wordpad-root *::after {
+  box-sizing: border-box;
+}
+
+.nova-wordpad-root {
+  font-family: var(--font-ui);
+  color: var(--text-primary);
+  background: var(--bg-app);
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+ * These tag-level resets use `:where(.nova-wordpad-root) tag` rather than
+ * `.nova-wordpad-root tag`: `:where()` contributes zero specificity, so the
+ * selector's specificity stays exactly what the un-scoped original
+ * (`button { ... }`, `a { ... }`, etc.) had — a single tag selector.
+ * Component CSS like `.nova-wordpad-table-grid-picker__cell { border: ... }`
+ * (one class selector) is *more* specific than a bare tag, so it correctly
+ * overrides the reset, same as it did before scoping was added. Writing
+ * `.nova-wordpad-root button` instead (a class + a tag) would out-specify
+ * that single-class component rule and silently win instead — which is
+ * exactly what made the table-insert grid's cell borders disappear.
+ */
+:where(.nova-wordpad-root) button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+:where(.nova-wordpad-root) input,
+:where(.nova-wordpad-root) select,
+:where(.nova-wordpad-root) textarea {
+  font: inherit;
+  color: inherit;
+}
+
+:where(.nova-wordpad-root) ul,
+:where(.nova-wordpad-root) ol {
+  margin: 0;
+  padding: 0;
+}
+
+:where(.nova-wordpad-root) img {
+  max-width: 100%;
+  display: block;
+}
+
+:where(.nova-wordpad-root) :focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+:where(.nova-wordpad-root) a {
+  color: var(--accent);
+}

@@ -1,0 +1,145 @@
+/**
+ * Root component styles for NovaWordpad. Renamed from the original
+ * `app-*` classes to the `nova-wordpad-*` prefix used by every other
+ * component in this package, and scoped to fit inside a bounded
+ * container supplied by the consumer (no `100vh` here — see
+ * `.nova-wordpad-shell` below).
+ */
+.nova-wordpad-shell {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.nova-wordpad-titlebar {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-3);
+  padding: 10px var(--space-4) 6px;
+  background: var(--bg-toolbar);
+  flex-shrink: 0;
+}
+
+.nova-wordpad-titlebar__title {
+  font-family: var(--font-ui);
+  font-weight: 600;
+  font-size: 14px;
+  border: none;
+  background: transparent;
+  padding: 2px 4px;
+  border-radius: var(--radius-sm);
+  min-width: 120px;
+}
+.nova-wordpad-titlebar__title:hover,
+.nova-wordpad-titlebar__title:focus-visible {
+  background: var(--bg-toolbar-pressed);
+}
+
+.nova-wordpad-titlebar__meta {
+  font-size: 12px;
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+  flex: 1;
+}
+
+.nova-wordpad-titlebar__theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+}
+.nova-wordpad-titlebar__theme-toggle:hover {
+  background: var(--bg-toolbar-pressed);
+  color: var(--text-primary);
+}
+.nova-wordpad-titlebar__theme-toggle svg {
+  width: 16px;
+  height: 16px;
+}
+
+.nova-wordpad-file-menu {
+  position: relative;
+}
+
+.nova-wordpad-file-menu__trigger {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  height: 24px;
+  padding: 0 8px;
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+.nova-wordpad-file-menu__trigger:hover {
+  background: var(--bg-toolbar-pressed);
+}
+.nova-wordpad-file-menu__trigger span {
+  font-size: 9px;
+  color: var(--text-secondary);
+}
+
+.nova-wordpad-menu-popover {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  z-index: 40;
+  min-width: 180px;
+  background: var(--bg-paper);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-dialog);
+  list-style: none;
+  padding: var(--space-1) 0;
+  margin: 0;
+}
+
+.nova-wordpad-menu-popover li button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  width: 100%;
+  text-align: left;
+  padding: 7px var(--space-3);
+  font-size: 13px;
+}
+.nova-wordpad-menu-popover li button:hover {
+  background: var(--bg-toolbar-pressed);
+}
+
+.nova-wordpad-menu-popover__shortcut {
+  font-size: 11px;
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+}
+
+.nova-wordpad-menu-divider {
+  height: 1px;
+  margin: var(--space-1) 0;
+  background: var(--border-subtle);
+}
+
+.nova-wordpad-error {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding: 8px var(--space-4);
+  background: var(--danger-soft);
+  color: var(--danger);
+  font-size: 13px;
+  border-bottom: 1px solid var(--danger);
+  flex-shrink: 0;
+}
+.nova-wordpad-error button {
+  color: var(--danger);
+  font-weight: 700;
+}
