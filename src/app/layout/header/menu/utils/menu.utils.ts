@@ -8,8 +8,8 @@ export function collectAllowedPaths(menu: BackendMenuItem[]): Set<string> {
 
   const walk = (items: BackendMenuItem[]): void => {
     items.forEach((item) => {
-      if (item.route) {
-        allowed.add(normalizePath(item.route));
+      if (item.path) {
+        allowed.add(normalizePath(item.path));
       }
       if (item.children && item.children.length > 0) {
         walk(item.children);
