@@ -1,4 +1,4 @@
-import type { Token, TokenType } from './types';
+import type { Token } from './types';
 
 const COMPARATORS = ['>=', '<=', '<>', '!=', '>', '<', '='];
 const OPERATORS = ['+', '-', '*', '/', '^', '%'];

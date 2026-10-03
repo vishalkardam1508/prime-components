@@ -24,12 +24,10 @@ export interface FillPreview {
 export function useNovaExcelFillHandle({
   selected,
   selectionRange,
-  cells,
   dims,
   cellHeight,
   colWidths,
   defaultColWidth,
-  containerRef,
   setCells,
   pushUndo,
 }: Props): {

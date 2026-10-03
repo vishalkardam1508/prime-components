@@ -29,7 +29,8 @@ export const mathFunctions: Record<string, FormulaFunction> = {
     for (let i = 0; i < sumRange.length; i++) {
       let match = true;
       for (let p = 1; p < args.length; p += 2) {
-        const criteriaRange = Array.isArray(args[p]) ? args[p] : [args[p]];
+        const rangeArg = args[p];
+        const criteriaRange = Array.isArray(rangeArg) ? rangeArg : [rangeArg];
         const criteria = args[p + 1];
         if (!matchesCriteria(criteriaRange[i] ?? '', criteria)) { match = false; break; }
       }

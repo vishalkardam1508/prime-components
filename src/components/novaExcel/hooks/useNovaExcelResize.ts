@@ -9,7 +9,7 @@ interface Props {
   defaultColWidth: number;
 }
 
-export function useNovaExcelResize({ colWidths, setColWidths, defaultColWidth }: Props): {
+export function useNovaExcelResize({ setColWidths, defaultColWidth }: Props): {
   onResizeStart: (e: React.MouseEvent, colIndex: number) => void;
 } {
   const resizerRef = useRef<{ startX: number; colIndex: number } | null>(null);

@@ -64,7 +64,6 @@ export function NovaExcel({
 
   const anchorRef = useRef<CellPosition | null>(null);
   const containerRef = useRef<HTMLDivElement | null>(null);
-  const fileInputRef = useRef<HTMLInputElement | null>(null);
   const isMouseSelectingRef = useRef(false);
 
   // ─── Hooks ─────────────────────────────────────────────────────────────────
@@ -476,7 +475,7 @@ export function NovaExcel({
   }, []);
 
   // ─── Render ────────────────────────────────────────────────────────────────
-  const { startRow, endRow, startCol, endCol, padTop, padBottom, padLeft, padRight } = virtualWindow;
+  const { startRow, endRow, startCol, endCol, padTop, padBottom } = virtualWindow;
 
   return (
     <div className={clsx(th.root, className)} ref={gridRootRef} onKeyDown={handleGridKeyDown} tabIndex={0} style={{ outline: 'none' }}>

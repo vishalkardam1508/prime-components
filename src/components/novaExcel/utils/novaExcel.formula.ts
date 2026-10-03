@@ -1,5 +1,5 @@
 import type { CellsMap } from '../types/novaExcel.types';
-import { parseFormula, evaluate, isError, toDisplay } from './formula';
+import { parseFormula, evaluate, toDisplay } from './formula';
 import type { FormulaContext, SheetData } from './formula';
 
 export interface FormulaSheetInput {

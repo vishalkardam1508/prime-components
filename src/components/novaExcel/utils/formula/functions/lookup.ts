@@ -1,5 +1,5 @@
 import type { FormulaFunction, FormulaValue } from '../types';
-import { err, isError, toNumber, flattenAll } from '../evaluator';
+import { err, isError, toNumber } from '../evaluator';
 
 export const lookupFunctions: Record<string, FormulaFunction> = {
   VLOOKUP: (args) => {
@@ -57,7 +57,7 @@ export const lookupFunctions: Record<string, FormulaFunction> = {
     if (totalCells === 0) return err('#N/A');
 
     // For HLOOKUP we need cols count — guess from first row match
-    const cols = guessCols(table, lookupVal);
+    const cols = guessCols(table);
     const rows = Math.floor(totalCells / cols);
 
     if (rowIdx > rows) return err('#REF!');
@@ -234,7 +234,7 @@ function guessColCount(total: number, minCols: number): number {
   return minCols;
 }
 
-function guessCols(table: FormulaValue[], lookupVal: FormulaValue): number {
+function guessCols(table: FormulaValue[]): number {
   // For HLOOKUP, try to find how many columns by checking where values repeat pattern
   // Fallback: assume square-ish
   const total = table.length;

@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState, type JSX } from 'react';
 import { createPortal } from 'react-dom';
-import { novaExcelTheme as th } from '../theme/novaExcelTheme';
 
 interface Props {
   currentName: string;

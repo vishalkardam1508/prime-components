@@ -1,5 +1,5 @@
-import type { FormulaFunction, FormulaValue } from '../types';
-import { err, flattenToNumbers, flattenAll, isError, toNumber } from '../evaluator';
+import type { FormulaFunction } from '../types';
+import { err, flattenToNumbers, flattenAll, toNumber } from '../evaluator';
 import { matchesCriteria } from './math';
 
 export const statsFunctions: Record<string, FormulaFunction> = {
@@ -33,7 +33,8 @@ export const statsFunctions: Record<string, FormulaFunction> = {
     for (let i = 0; i < avgRange.length; i++) {
       let match = true;
       for (let p = 1; p < args.length; p += 2) {
-        const criteriaRange = Array.isArray(args[p]) ? args[p] : [args[p]];
+        const rangeArg = args[p];
+        const criteriaRange = Array.isArray(rangeArg) ? rangeArg : [rangeArg];
         const criteria = args[p + 1];
         if (!matchesCriteria(criteriaRange[i] ?? '', criteria)) { match = false; break; }
       }
@@ -90,7 +91,8 @@ export const statsFunctions: Record<string, FormulaFunction> = {
     for (let i = 0; i < firstRange.length; i++) {
       let match = true;
       for (let p = 0; p < args.length; p += 2) {
-        const range = Array.isArray(args[p]) ? args[p] : [args[p]];
+        const rangeArg = args[p];
+        const range = Array.isArray(rangeArg) ? rangeArg : [rangeArg];
         const criteria = args[p + 1];
         if (!matchesCriteria(range[i] ?? '', criteria)) { match = false; break; }
       }

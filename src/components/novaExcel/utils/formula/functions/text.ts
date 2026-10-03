@@ -1,4 +1,4 @@
-import type { FormulaFunction, FormulaValue } from '../types';
+import type { FormulaFunction } from '../types';
 import { err, isError, toNumber, flattenAll } from '../evaluator';
 
 export const textFunctions: Record<string, FormulaFunction> = {

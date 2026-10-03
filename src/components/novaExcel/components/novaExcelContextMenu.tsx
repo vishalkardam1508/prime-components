@@ -1,6 +1,5 @@
 import { useState, type JSX } from 'react';
 import { createPortal } from 'react-dom';
-import { novaExcelTheme as th } from '../theme/novaExcelTheme';
 import { useNovaExcelClampedPosition } from '../hooks/useNovaExcelClampedPosition';
 import clsx from 'clsx';
 

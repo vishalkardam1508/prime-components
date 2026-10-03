@@ -1,5 +1,5 @@
 import type { FormulaFunction } from '../types';
-import { err, toNumber, colLetterToNum } from '../evaluator';
+import { err, toNumber } from '../evaluator';
 
 export const referenceFunctions: Record<string, FormulaFunction> = {
   ROW: (args) => {

@@ -21,7 +21,6 @@ export function detectPattern(values: string[]): FillPattern {
   }
 
   // Try sequence pattern (days/months)
-  const firstLower = values[0].toLowerCase();
   const seqResult = trySequence(values, DAYS_SHORT) ?? trySequence(values, DAYS_FULL) ?? trySequence(values, MONTHS_SHORT) ?? trySequence(values, MONTHS_FULL);
   if (seqResult != null) return seqResult;
 
